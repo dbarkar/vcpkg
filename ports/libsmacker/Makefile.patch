@@ -1,0 +1,17 @@
+diff --git a/Makefile.am b/Makefile.am
+index c99998716c2a1631c83cbaae65501998c8838158..d927a4a6f50ccacd9afa646d41eca0762e3599d1 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -1,10 +1,10 @@
+ ACLOCAL_AMFLAGS = -I m4
+ 
+-AM_CPPFLAGS = -Wall -Wextra
++AM_CPPFLAGS = -Wall
+ 
+ lib_LTLIBRARIES = libsmacker.la
+ libsmacker_la_SOURCES = smacker.c
+-libsmacker_la_LDFLAGS = -version-info 1:2:0
++libsmacker_la_LDFLAGS = -no-undefined -version-info 1:2:0
+ 
+ noinst_PROGRAMS = driver smk2avi
+ 
